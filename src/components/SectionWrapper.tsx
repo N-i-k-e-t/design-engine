@@ -24,7 +24,7 @@ export default function SectionWrapper({
     <section
       id={id}
       className={`relative overflow-hidden ${bg} ${
-        noPadding ? "" : "py-24 md:py-32 lg:py-40"
+        noPadding ? "" : "py-32 md:py-48 lg:py-64"
       } ${className}`}
     >
       <motion.div

@@ -15,44 +15,44 @@ export default function HeroSection() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
           poster="/assets/hero-bg.jpeg"
         >
           <source src="/assets/hero-video.mp4" type="video/mp4" />
         </video>
 
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-bg-primary via-bg-primary/90 to-bg-primary/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg-primary via-transparent to-bg-primary/80" />
+        {/* Luxury dark overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#050709] via-[#050709]/90 to-[#050709]/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050709] via-transparent to-[#050709]/80" />
 
         {/* Animated gradient orbs */}
-        <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] rounded-full bg-accent/[0.07] blur-[120px] animate-[float_8s_ease-in-out_infinite]" />
-        <div className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] rounded-full bg-accent-purple/[0.07] blur-[120px] animate-[float_10s_ease-in-out_infinite_2s]" />
+        <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] rounded-full bg-accent/[0.05] blur-[120px] animate-[float_8s_ease-in-out_infinite]" />
+        <div className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] rounded-full bg-accent-purple/[0.05] blur-[120px] animate-[float_10s_ease-in-out_infinite_2s]" />
 
         {/* Subtle grid */}
         <div
-          className="absolute inset-0 opacity-[0.015]"
+          className="absolute inset-0 opacity-[0.02]"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)`,
             backgroundSize: "60px 60px",
           }}
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — Text */}
           <div>
             {/* Eyebrow */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="mb-6"
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-8"
             >
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs font-medium text-accent uppercase tracking-widest">
-                <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-[11px] font-medium text-accent uppercase tracking-[0.2em]">
+                <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
                 Pre-Launch — July 22, 2026
               </span>
             </motion.div>
@@ -61,10 +61,10 @@ export default function HeroSection() {
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[0.95]"
+              transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold tracking-tighter leading-[1.05]"
             >
-              <span className="text-text-primary">Design Once.</span>
+              <span className="text-white drop-shadow-sm">Design Once.</span>
               <br />
               <span className="gradient-text-accent">Visualize Everywhere.</span>
             </motion.h1>

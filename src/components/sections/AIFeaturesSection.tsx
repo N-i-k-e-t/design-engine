@@ -77,7 +77,7 @@ export default function AIFeaturesSection() {
       {/* Hero features — large cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-12">
         {heroFeatures.map((feature, i) => (
-          <GlassCard key={feature.title} delay={i * 0.1} glow={i === 0 ? "blue" : i === 1 ? "purple" : "none"}>
+          <GlassCard key={feature.title} delay={i * 0.1} glowColor={i === 0 ? "accent" : i === 1 ? "purple" : "none"}>
             <div className="flex flex-col h-full">
               <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center text-white mb-5`}>
                 {feature.icon}

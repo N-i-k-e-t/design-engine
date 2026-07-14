@@ -31,18 +31,17 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.nav
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-bg-primary/80 backdrop-blur-2xl border-b border-white/[0.06]"
-            : "bg-transparent"
+            ? "bg-[#050709]/70 backdrop-blur-2xl border-b border-white/[0.05] shadow-[0_4px_30px_rgba(0,0,0,0.1)] py-4"
+            : "bg-transparent py-6"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-purple flex items-center justify-center">
@@ -73,7 +72,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-3">
               <a
                 href="#waitlist"
-                className="px-5 py-2.5 text-sm font-medium rounded-xl bg-gradient-to-r from-accent to-accent-purple text-white hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 hover:-translate-y-0.5"
+                className="px-5 py-2.5 text-sm font-medium rounded-xl bg-gradient-to-r from-accent to-accent-purple text-white hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)] transition-all duration-300 hover:-translate-y-0.5"
               >
                 Join Waitlist
               </a>
@@ -91,9 +90,8 @@ export default function Navbar() {
                 <span className={`block h-[1.5px] bg-text-primary transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-[4.5px]" : ""}`} />
               </div>
             </button>
-          </div>
         </div>
-      </motion.nav>
+      </motion.header>
 
       {/* Mobile Menu */}
       <AnimatePresence>
@@ -105,7 +103,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 md:hidden"
           >
-            <div className="absolute inset-0 bg-bg-primary/95 backdrop-blur-2xl" />
+            <div className="absolute inset-0 bg-[#050709]/95 backdrop-blur-2xl" />
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -132,7 +130,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35 }}
-                className="mt-4 px-8 py-3 text-lg font-medium rounded-xl bg-gradient-to-r from-accent to-accent-purple text-white"
+                className="mt-4 px-8 py-3 text-lg font-medium rounded-xl bg-gradient-to-r from-accent to-accent-purple text-white shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)]"
               >
                 Join Waitlist
               </motion.a>

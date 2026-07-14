@@ -105,8 +105,9 @@ export default function WaitlistSection() {
               <div>
                 <input
                   {...register("name")}
+                  type="text"
                   placeholder="Full Name"
-                  className="w-full px-5 py-3.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/25 transition-all duration-300"
+                  className="w-full px-5 py-4 rounded-xl bg-[#050709]/50 border border-white/[0.05] shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/25 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
                 />
                 {errors.name && (
                   <p className="mt-1 text-xs text-red-400 text-left">{errors.name.message}</p>
@@ -119,7 +120,7 @@ export default function WaitlistSection() {
                   {...register("email")}
                   type="email"
                   placeholder="Email Address"
-                  className="w-full px-5 py-3.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/25 transition-all duration-300"
+                  className="w-full px-5 py-4 rounded-xl bg-[#050709]/50 border border-white/[0.05] shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/25 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
                 />
                 {errors.email && (
                   <p className="mt-1 text-xs text-red-400 text-left">{errors.email.message}</p>
@@ -130,7 +131,7 @@ export default function WaitlistSection() {
               <div>
                 <select
                   {...register("profession")}
-                  className="w-full px-5 py-3.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-text-secondary text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/25 transition-all duration-300 appearance-none cursor-pointer"
+                  className="w-full px-5 py-4 rounded-xl bg-[#050709]/50 border border-white/[0.05] shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] text-text-secondary text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/25 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] appearance-none cursor-pointer"
                   defaultValue=""
                 >
                   <option value="" disabled className="bg-bg-card text-text-muted">
