@@ -73,18 +73,6 @@ export default function HeroSection() {
           <Button variant="primary" size="lg" href="#waitlist">
             Join Early Access
           </Button>
-          <Button
-            variant="secondary"
-            size="lg"
-            href="#how-it-works"
-            icon={
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            }
-          >
-            Watch Demo
-          </Button>
         </motion.div>
 
         {/* Countdown */}
