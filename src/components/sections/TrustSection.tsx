@@ -4,13 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionWrapper from "../SectionWrapper";
 
-const stats = [
-  { value: "10,000+", label: "Waitlist Signups" },
-  { value: "50+", label: "Industries Served" },
-  { value: "13+", label: "Product Categories" },
-  { value: "July 22", label: "Launch Date" },
-];
-
 const showcaseImages = [
   "/assets/product-render-1.jpeg",
   "/assets/product-render-2.jpeg",
@@ -53,28 +46,6 @@ export default function TrustSection() {
               </motion.div>
             ))}
           </div>
-        </div>
-
-        {/* Divider */}
-        <div className="section-divider" />
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat, i) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.6 }}
-              className="text-center"
-            >
-              <p className="text-3xl md:text-4xl font-bold text-text-primary">
-                {stat.value}
-              </p>
-              <p className="mt-2 text-sm text-text-muted">{stat.label}</p>
-            </motion.div>
-          ))}
         </div>
       </div>
     </SectionWrapper>
