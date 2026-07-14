@@ -2,10 +2,11 @@
 
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
+import MagneticButton from "./MagneticButton";
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "outline";
   size?: "sm" | "md" | "lg";
   href?: string;
   onClick?: () => void;
@@ -65,29 +66,27 @@ export default function Button({
     </>
   );
 
-  if (href) {
-    return (
-      <motion.a
-        href={href}
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.98 }}
-        className={baseClasses}
-      >
-        {content}
-      </motion.a>
-    );
-  }
-
-  return (
+  const element = href ? (
+    <motion.a
+      href={href}
+      whileHover={{ y: -2 }}
+      whileTap={{ scale: 0.98 }}
+      className={baseClasses}
+    >
+      {content}
+    </motion.a>
+  ) : (
     <motion.button
       type={type}
       onClick={onClick}
-      disabled={disabled || loading}
-      whileHover={disabled ? undefined : { y: -2 }}
-      whileTap={disabled ? undefined : { scale: 0.98 }}
+      disabled={disabled}
+      whileHover={{ y: -2 }}
+      whileTap={{ scale: 0.98 }}
       className={baseClasses}
     >
       {content}
     </motion.button>
   );
+
+  return <MagneticButton>{element}</MagneticButton>;
 }

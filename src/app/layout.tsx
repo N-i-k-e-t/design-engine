@@ -42,14 +42,17 @@ export const metadata: Metadata = {
   },
 };
 
+import CursorGlow from "@/components/CursorGlow";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} dark`}>
-      <body className="bg-bg-primary text-text-primary font-sans antialiased">
+    <html lang="en" className={`${inter.variable} dark scroll-smooth`}>
+      <body className="bg-bg-primary text-text-primary font-sans antialiased overflow-x-hidden selection:bg-accent/30 selection:text-white">
+        <CursorGlow />
         {children}
       </body>
     </html>
