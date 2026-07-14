@@ -60,7 +60,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-6 text-lg md:text-xl text-text-secondary max-w-2xl leading-relaxed font-light"
         >
-          Upload once. Instantly visualize and manufacture on any apparel, pack, or canvas.
+          Upload once. Instantly visualize and manufacture your entire apparel collection in photorealistic 3D.
         </motion.p>
 
         {/* CTAs */}

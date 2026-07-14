@@ -13,63 +13,56 @@ const products = [
     category: "Apparel", 
     image: "/assets/showcase-spiderman-studio.jpeg", 
     color: "from-blue-500/20 to-purple-500/20",
-    description: "Photorealistic fabric renders featuring precise thread weave mappings, shadow folds, and seam contours." 
+    description: "Relaxed streetwear fit mapping fabric folds, cotton grain texture, and shoulder seam drop." 
   },
   { 
-    name: "Premium Hoodie", 
+    name: "Heavyweight Hoodie", 
     category: "Apparel", 
     image: "/assets/showcase-pink-silk.jpeg", 
     color: "from-purple-500/20 to-pink-500/20",
-    description: "Garment visualization supporting heavyweight cotton textures, custom embroidery, and drawstring physics." 
+    description: "Thick fleece texture rendering with realistic double-lined hood drape and pocket seams." 
   },
   { 
-    name: "Classic Cap", 
-    category: "Accessories", 
-    image: "/assets/showcase-desert.jpeg", 
-    color: "from-green-500/20 to-teal-500/20",
-    description: "Structured headwear mapping with front panel alignments, visor seam lines, and custom color accents." 
-  },
-  { 
-    name: "Steel Flask", 
-    category: "Bottles", 
-    image: "/assets/product-render-2.jpeg", 
+    name: "Structured Sweatshirt", 
+    category: "Apparel", 
+    image: "/assets/gallery-cobalt.jpeg", 
     color: "from-cyan-500/20 to-blue-500/20",
-    description: "Metallic shaders capturing soft light reflections, brushed aluminum materials, and laser-engraved prints." 
+    description: "French terry knit weave rendering with ribbed collar and cuff edge detailing." 
   },
   { 
-    name: "Eco Packaging Box", 
-    category: "Packaging", 
-    image: "/assets/product-render-1.jpeg", 
+    name: "Utility Bomber Jacket", 
+    category: "Outerwear", 
+    image: "/assets/gallery-forest.jpeg", 
+    color: "from-green-500/20 to-teal-500/20",
+    description: "Nylon sheen simulation with hardware metal zippers, pocket flaps, and elastic waistbands." 
+  },
+  { 
+    name: "Avant-Garde Garment", 
+    category: "Couture", 
+    image: "/assets/gallery-cherry-blossom.jpeg", 
     color: "from-rose-500/20 to-red-500/20",
-    description: "Cardboard kraft folding mockups containing correct paperboard thicknesses, seam alignments, and UV print masks." 
+    description: "Flowing fabric drape simulation capturing complex folds, light translucent weaves, and designer cuts." 
   },
   { 
-    name: "Streetwear Sneakers", 
-    category: "Footwear", 
-    image: "/assets/product-render-3.jpeg", 
+    name: "Streetwear Cargo Pants", 
+    category: "Bottoms", 
+    image: "/assets/gallery-oceanic.jpeg", 
     color: "from-teal-500/20 to-cyan-500/20",
-    description: "Multi-material athletic footwear visualization mapping panel textures, custom soles, and detailed stitch lines." 
+    description: "Heavy canvas cotton simulation with pocket stitches, strap buckles, and natural leg drape." 
   },
   { 
-    name: "Leather Journal", 
-    category: "Merchandise", 
-    image: "/assets/showcase-frozen.jpeg", 
+    name: "Cropped Graphic Top", 
+    category: "Apparel", 
+    image: "/assets/gallery-mythical.jpeg", 
     color: "from-emerald-500/20 to-green-500/20",
-    description: "Hardcover notebook simulation with debossed logo stamps, fine leather texture shaders, and page bindings." 
+    description: "Ribbed crop top model capturing dynamic chest fit, side seams, and elastic stretch mapping." 
   },
   { 
-    name: "Exhibition Poster", 
-    category: "Prints", 
-    image: "/assets/showcase-patterned.jpeg", 
-    color: "from-fuchsia-500/20 to-pink-500/20",
-    description: "High-resolution graphic presentation on premium matte papers, frame shadows, and natural lighting." 
-  },
-  { 
-    name: "Luxury Velvet Box", 
-    category: "Packaging", 
-    image: "/assets/showcase-velvet.jpeg", 
-    color: "from-violet-500/20 to-purple-500/20",
-    description: "High-end product packaging featuring deep pile velvet shaders, embossed gold foil accents, and hinge physics." 
+    name: "Puffer Jacket", 
+    category: "Outerwear", 
+    image: "/assets/gallery-gothic.jpeg", 
+    color: "from-slate-500/20 to-gray-500/20",
+    description: "Insulated down jacket visualization simulating realistic volume panels, zipper lines, and synthetic nylon sheen." 
   },
 ];
 
@@ -80,9 +73,9 @@ export default function ProductEcosystemSection() {
   return (
     <SectionWrapper id="products" bgVariant="secondary">
       <SectionHeading
-        eyebrow="Product Ecosystem"
-        title="One Upload. Every Product."
-        subtitle="Instantly manifest your designs across our hyper-realistic 3D product library in seconds."
+        eyebrow="Apparel Collection"
+        title="One Design. The Entire Line."
+        subtitle="Instantly map your artwork across our hyper-realistic 3D apparel catalog with fabric drape and fold physics."
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-16 items-start">
@@ -156,7 +149,7 @@ export default function ProductEcosystemSection() {
                     <span className="px-3 py-1 rounded-full bg-accent/20 border border-accent/30 text-accent text-xs font-bold uppercase tracking-widest">
                       {activeProduct.category}
                     </span>
-                    <span className="text-text-muted text-xs font-mono">3D High-Fidelity Mockup</span>
+                    <span className="text-text-muted text-xs font-mono">3D Fabric Simulation</span>
                   </div>
                   <h3 className="text-3xl font-bold tracking-tight text-white mb-3">
                     {activeProduct.name}
