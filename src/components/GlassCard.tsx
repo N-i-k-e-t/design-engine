@@ -25,6 +25,13 @@ export default function GlassCard({
     none: "",
   };
 
+  const borderGlowClasses = {
+    accent: "group-hover:border-accent/40",
+    purple: "group-hover:border-accent-purple/40",
+    success: "group-hover:border-success/40",
+    none: "group-hover:border-white/[0.15]",
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -36,7 +43,7 @@ export default function GlassCard({
       } ${hoverEffect ? glowClasses[glowColor] : ""} ${className}`}
     >
       {/* Inner highlight for 3D feel */}
-      <div className="absolute inset-0 rounded-2xl pointer-events-none border border-white/[0.05] shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]" />
+      <div className={`absolute inset-0 rounded-2xl pointer-events-none border border-white/[0.05] ${borderGlowClasses[glowColor]} shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)] transition-colors duration-500`} />
       {/* Subtle background glow */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] to-transparent pointer-events-none" />
       
