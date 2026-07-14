@@ -41,19 +41,6 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 w-full pt-32 pb-20 flex flex-col items-center text-center">
-        {/* Eyebrow */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-8"
-        >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-[11px] font-medium text-accent uppercase tracking-[0.2em]">
-            <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
-            Pre-Launch — July 22, 2026
-          </span>
-        </motion.div>
-
         {/* Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
