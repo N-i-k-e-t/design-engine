@@ -9,60 +9,60 @@ import GlassCard from "../GlassCard";
 
 const products = [
   { 
-    name: "Oversized T-Shirt", 
-    category: "Apparel", 
-    image: "/assets/showcase-spiderman-studio.jpeg", 
-    color: "from-blue-500/20 to-purple-500/20",
-    description: "Relaxed streetwear fit mapping fabric folds, cotton grain texture, and shoulder seam drop." 
+    name: "Cherry Blossom Couture", 
+    category: "Gowns", 
+    image: "/assets/gallery-cherry-blossom.jpeg", 
+    color: "from-pink-500/20 to-rose-500/20",
+    description: "Flowing silk gown with cherry blossom patterns, featuring advanced dynamic chiffon physics and soft fold shading." 
   },
   { 
-    name: "Heavyweight Hoodie", 
-    category: "Apparel", 
+    name: "Phoenix Rising Silhouette", 
+    category: "Haute Couture", 
+    image: "/assets/showcase-phoenix.jpeg", 
+    color: "from-orange-500/20 to-red-500/20",
+    description: "Avant-garde feather-effect fabric draping with high-contrast warm glow lighting contours." 
+  },
+  { 
+    name: "Pink Silk Drape", 
+    category: "Satin Line", 
     image: "/assets/showcase-pink-silk.jpeg", 
     color: "from-purple-500/20 to-pink-500/20",
-    description: "Thick fleece texture rendering with realistic double-lined hood drape and pocket seams." 
+    description: "Hyper-reflective satin fabric rendering with liquid-like drape contours and realistic stitching folds." 
   },
   { 
-    name: "Structured Sweatshirt", 
-    category: "Apparel", 
-    image: "/assets/gallery-cobalt.jpeg", 
-    color: "from-cyan-500/20 to-blue-500/20",
-    description: "French terry knit weave rendering with ribbed collar and cuff edge detailing." 
-  },
-  { 
-    name: "Utility Bomber Jacket", 
-    category: "Outerwear", 
-    image: "/assets/gallery-forest.jpeg", 
-    color: "from-green-500/20 to-teal-500/20",
-    description: "Nylon sheen simulation with hardware metal zippers, pocket flaps, and elastic waistbands." 
-  },
-  { 
-    name: "Avant-Garde Garment", 
+    name: "Midnight Eclipse Dress", 
     category: "Couture", 
-    image: "/assets/gallery-cherry-blossom.jpeg", 
-    color: "from-rose-500/20 to-red-500/20",
-    description: "Flowing fabric drape simulation capturing complex folds, light translucent weaves, and designer cuts." 
+    image: "/assets/showcase-eclipse.jpeg", 
+    color: "from-blue-500/20 to-purple-500/20",
+    description: "Deep obsidian velvet textures accented with shimmering celestial maps and high-fidelity panel styling." 
   },
   { 
-    name: "Streetwear Cargo Pants", 
-    category: "Bottoms", 
-    image: "/assets/gallery-oceanic.jpeg", 
-    color: "from-teal-500/20 to-cyan-500/20",
-    description: "Heavy canvas cotton simulation with pocket stitches, strap buckles, and natural leg drape." 
+    name: "Glacial Ice Gown", 
+    category: "Avant-Garde", 
+    image: "/assets/showcase-frozen.jpeg", 
+    color: "from-cyan-500/20 to-blue-500/20",
+    description: "Frost-sheened synthetic fabric panels capturing intricate crystal refraction and translucent structures." 
   },
   { 
-    name: "Cropped Graphic Top", 
-    category: "Apparel", 
-    image: "/assets/gallery-mythical.jpeg", 
-    color: "from-emerald-500/20 to-green-500/20",
-    description: "Ribbed crop top model capturing dynamic chest fit, side seams, and elastic stretch mapping." 
+    name: "Desert Sands Drape", 
+    category: "Satin Line", 
+    image: "/assets/showcase-desert.jpeg", 
+    color: "from-yellow-500/20 to-amber-500/20",
+    description: "Sand-textured raw silk dress visualization highlighting multi-directional lighting and natural pleats." 
   },
   { 
-    name: "Puffer Jacket", 
-    category: "Outerwear", 
-    image: "/assets/gallery-gothic.jpeg", 
-    color: "from-slate-500/20 to-gray-500/20",
-    description: "Insulated down jacket visualization simulating realistic volume panels, zipper lines, and synthetic nylon sheen." 
+    name: "Stained Glass Silhouette", 
+    category: "Couture", 
+    image: "/assets/gallery-stained-glass.jpeg", 
+    color: "from-fuchsia-500/20 to-pink-500/20",
+    description: "Mosaic pattern mappings resembling cathedral glass window textures draped over a structured silhouette." 
+  },
+  { 
+    name: "Deep Velvet Wrap", 
+    category: "Haute Couture", 
+    image: "/assets/showcase-velvet.jpeg", 
+    color: "from-violet-500/20 to-purple-500/20",
+    description: "Heavy velvet draping simulation capturing deep shadow contrast, soft surface pile, and metallic embroidery." 
   },
 ];
 
@@ -73,9 +73,9 @@ export default function ProductEcosystemSection() {
   return (
     <SectionWrapper id="products" bgVariant="secondary">
       <SectionHeading
-        eyebrow="Apparel Collection"
-        title="One Design. The Entire Line."
-        subtitle="Instantly map your artwork across our hyper-realistic 3D apparel catalog with fabric drape and fold physics."
+        eyebrow="Couture Showcase"
+        title="One Design. Infinite Silhouette."
+        subtitle="Drape digital artwork over hyper-realistic 3D women's haute couture gowns with photorealistic fabric physics."
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-16 items-start">
@@ -149,7 +149,7 @@ export default function ProductEcosystemSection() {
                     <span className="px-3 py-1 rounded-full bg-accent/20 border border-accent/30 text-accent text-xs font-bold uppercase tracking-widest">
                       {activeProduct.category}
                     </span>
-                    <span className="text-text-muted text-xs font-mono">3D Fabric Simulation</span>
+                    <span className="text-text-muted text-xs font-mono">3D Silk & Chiffon Simulation</span>
                   </div>
                   <h3 className="text-3xl font-bold tracking-tight text-white mb-3">
                     {activeProduct.name}
