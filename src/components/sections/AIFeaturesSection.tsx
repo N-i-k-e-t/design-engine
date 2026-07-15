@@ -48,23 +48,6 @@ const heroFeatures = [
   },
 ];
 
-const features = [
-  { title: "Print Preview", desc: "CMYK, spot color, and resolution validation" },
-  { title: "Embroidery", desc: "Stitch-accurate digitization previews" },
-  { title: "DTF Transfer", desc: "Direct-to-film ready outputs" },
-  { title: "DTG Print", desc: "Direct-to-garment color management" },
-  { title: "Foil & Laser", desc: "Metallic and laser cut file generation" },
-  { title: "Lighting Engine", desc: "Dynamic scene lighting and reflections" },
-  { title: "Material Library", desc: "200+ fabric, paper, and surface textures" },
-  { title: "Version History", desc: "Track every iteration and revision" },
-  { title: "Team Collaboration", desc: "Real-time editing with role permissions" },
-  { title: "Brand Kit", desc: "Lock in colors, fonts, and brand guidelines" },
-  { title: "Batch Generation", desc: "Generate hundreds of mockups at once" },
-  { title: "API Access", desc: "Integrate with your existing workflow" },
-  { title: "Marketplace", desc: "Sell and buy premium product templates" },
-  { title: "Export Options", desc: "PNG, PDF, SVG, TIFF, and more" },
-];
-
 export default function AIFeaturesSection() {
   return (
     <SectionWrapper id="features">
@@ -75,7 +58,7 @@ export default function AIFeaturesSection() {
       />
 
       {/* Hero features — large cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         {heroFeatures.map((feature, i) => (
           <GlassCard key={feature.title} delay={i * 0.1} glowColor={i === 0 ? "accent" : i === 1 ? "purple" : "none"}>
             <div className="flex flex-col h-full">
@@ -90,28 +73,6 @@ export default function AIFeaturesSection() {
               </p>
             </div>
           </GlassCard>
-        ))}
-      </div>
-
-      {/* Feature grid — compact */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
-        {features.map((feature, i) => (
-          <motion.div
-            key={feature.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-30px" }}
-            transition={{ delay: i * 0.03, duration: 0.5 }}
-            whileHover={{ y: -4 }}
-            className="glass rounded-xl p-4 hover:bg-white/[0.08] hover:border-white/[0.12] transition-all duration-300 cursor-default"
-          >
-            <h4 className="text-sm font-semibold text-text-primary mb-1">
-              {feature.title}
-            </h4>
-            <p className="text-xs text-text-muted leading-relaxed">
-              {feature.desc}
-            </p>
-          </motion.div>
         ))}
       </div>
     </SectionWrapper>
