@@ -15,15 +15,15 @@ export default function HeroSection() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
+          className="absolute inset-0 w-full h-full object-cover opacity-90"
           poster="/assets/hero-bg.jpeg"
         >
           <source src="/assets/hero-video.mp4" type="video/mp4" />
         </video>
 
         {/* Softer dark overlay centered to keep text legible while video remains visible */}
-        <div className="absolute inset-0 bg-[#050709]/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050709] via-transparent to-[#050709]/70" />
+        <div className="absolute inset-0 bg-[#050709]/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050709] via-transparent to-[#050709]/40" />
 
         {/* Animated gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-accent/[0.04] blur-[120px] animate-[float_8s_ease-in-out_infinite]" />
