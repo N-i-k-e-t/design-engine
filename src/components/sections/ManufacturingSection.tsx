@@ -53,8 +53,8 @@ export default function ManufacturingSection() {
     <SectionWrapper id="manufacturing" bgVariant="secondary">
       <SectionHeading
         eyebrow="Manufacturing"
-        title="From Screen to Factory Floor"
-        subtitle="Every output is production-grade. Every file is factory-ready. No guesswork, no rework."
+        title="Pre-Visualize Every Thread"
+        subtitle="Experience the exact fabric weights, weave textures, and color designs through AI before your garment physically exists in the real world."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
