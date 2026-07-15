@@ -9,32 +9,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Design Engine — AI-Powered Product Visualization & Manufacturing Platform",
+  title: "Design Engine — AI-Powered Fabric & Apparel Visualization Platform",
   description:
-    "Upload once, visualize everywhere. Create photorealistic product previews, manufacturing-ready outputs, and AI-powered mockups from a single design. Launching July 22, 2026.",
+    "Upload once, drape everywhere. Create photorealistic 3D apparel mockups, simulate fabric textures, and generate manufacturing-ready apparel tech packs from a single design.",
   keywords: [
-    "product visualization",
+    "apparel visualization",
+    "fabric design",
     "AI mockups",
     "manufacturing platform",
-    "product design",
+    "fashion design",
     "apparel mockups",
-    "packaging design",
     "3D visualization",
     "print-ready files",
+    "couture simulation",
   ],
   openGraph: {
-    title: "Design Engine — Upload Once. Visualize Everywhere.",
+    title: "Design Engine — Upload Once. Drape Everywhere.",
     description:
-      "The AI Operating System for Product Design. Create photorealistic previews and manufacturing-ready outputs from a single design.",
+      "The AI Operating System for Apparel & Fabric Design. Create photorealistic garment previews and manufacturing-ready tech packs from a single design.",
     type: "website",
     locale: "en_US",
     siteName: "Design Engine",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Design Engine — Upload Once. Visualize Everywhere.",
+    title: "Design Engine — Upload Once. Drape Everywhere.",
     description:
-      "The AI Operating System for Product Design. Launching July 22, 2026.",
+      "The AI Operating System for Apparel & Fabric Design. Launching July 22, 2026.",
   },
   robots: {
     index: true,

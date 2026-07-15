@@ -50,7 +50,7 @@ export default function HeroSection() {
         >
           <span className="text-white drop-shadow-sm">Design Once.</span>
           <br />
-          <span className="gradient-text-accent">Visualize Everywhere.</span>
+          <span className="gradient-text-accent">Drape Everywhere.</span>
         </motion.h1>
 
         {/* Subheading (Reduced Text) */}
